@@ -1,7 +1,5 @@
-# .NET
-Desenvolvimento .NET & AngularJS.
-
-## Passo a passo de ambientação
+# Desenvolvimento .NET|Angular|CSharp
+## Passo a passo
 
 1. Baixar extensão no VSCODE: Angular Language Service
 
