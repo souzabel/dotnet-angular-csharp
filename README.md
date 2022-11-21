@@ -22,5 +22,4 @@
 
 ## Estudo interno - Avanade
 
-:small_orange_diamond:<a href="https://github.com/souzabel/CSharp-DotaNet">CSharp primeiros passos: Lógica de Programação e Algoritmos
-</a><br>
+:small_orange_diamond:<a href="https://github.com/souzabel/CSharp/tree/master/Avanade">Construção de ambiente</a><br>
