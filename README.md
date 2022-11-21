@@ -6,7 +6,7 @@
 </div>
 
 
-## FIAPON
+## FIAP ON
 
 :small_orange_diamond:<a href="https://github.com/souzabel/CSharp-DotaNet">Introdução à Plataforma .NET</a><br>
 :small_orange_diamond:<a href="https://github.com/souzabel/CSharp-DotaNet">C#</a><br>
