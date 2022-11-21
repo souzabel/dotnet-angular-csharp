@@ -1,4 +1,4 @@
-# Desenvolvimento .NET|Angular|CSharp
+# Desenvolvimento .NET|Angular|CSharp - Marcos Sabino
 ## Passo a passo
 
 1. Baixar extensão no VSCODE: Angular Language Service
