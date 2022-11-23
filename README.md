@@ -2,7 +2,7 @@
 <img  width="200"  alt="" justify-content="center" src=" ">
 <br>
 <br>
-<p>Repositório criado com intuito de registrar meus estudos em  .Net e C#</p>
+<h2>Repositório criado com intuito de registrar meus estudos em  .Net e C#</h2>
 </div>
 
 
