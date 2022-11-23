@@ -85,12 +85,13 @@ Para o primeiro programa, sera necessária a criação de uma solução de proje
 
 A Figura `Tela de criacdo de projeto` apresenta a tela inicial de criação de um projeto e os templates disponíveis.
 
-Na tela de criação, devemos escolher a linguagem Visual C# na parte direita da janela. No centro, vamos selecionar o tipo de projeto Console App (.NET Framework). Na parte inferior, temos a caixa de texto para definir o nome do projeto, o local no sistema de arquivos e o nome da solução. Para nosso exemplo, vamos usar <b>FiapHelloWorld<b> como nome do projeto e da solução.
+Na tela de criação, devemos escolher a linguagem Visual C# na parte direita da janela. No centro, vamos selecionar o tipo de projeto Console App (.NET Framework). Na parte inferior, temos a caixa de texto para definir o nome do projeto, o local no sistema de arquivos e o nome da solução. Para nosso exemplo, vamos usar <b>FiapHelloWorld</b> como nome do projeto e da solução.
+
 <img src="./img/projeto.png" alt="projeto">
-Com o projeto aberto, e por meio do Solution Explorer posicionado no lado esquerdo da janela do Visual Studio, podemos navegar para o sistema de arquivos e verificar os arquivos do projeto. Com um clique do botão direto em cima do projeto ou da solução, selecione a opção <b>Open Folder in File Explorer<b>.
+Com o projeto aberto, e por meio do Solution Explorer posicionado no lado esquerdo da janela do Visual Studio, podemos navegar para o sistema de arquivos e verificar os arquivos do projeto. Com um clique do botão direto em cima do projeto ou da solução, selecione a opção <b>Open Folder in File Explorer</b>.
 
 ### Escrevendo o código:
-Anteriormente, foram executados os passos para a criação de um projeto C# do tipo Console Application, que por padrão gera a classe <b>Program.cs<b>, a qual será responsável pela <b>execução dos nossos comandos<b>. 
+Anteriormente, foram executados os passos para a criação de um projeto C# do tipo Console Application, que por padrão gera a classe <b>Program.cs</b>, a qual será responsável pela <b>execução dos nossos comandos<b>. 
 
 ``` C#
 using System;
@@ -106,7 +107,7 @@ namespace FiapHelloWorld
 }
 ```
 
-Agora, vamos inserir algumas linhas de código e executar o primeiro programa. Com um duplo clique no arquivo <b>Program.cs<b>, disponível na janela <b>Solutions Explorer<b>, podemos editar o conteúdo do programa e inserir as linhas de código necessárias. Assim, vamos inserir uma linha para a impressão de uma mensagem na tela e outra linha que mantém a janela para a visualização do usuário até que uma tecla seja pressionada:
+Agora, vamos inserir algumas linhas de código e executar o primeiro programa. Com um duplo clique no arquivo <b>Program.cs</b>, disponível na janela <b>Solutions Explorer</b>, podemos editar o conteúdo do programa e inserir as linhas de código necessárias. Assim, vamos inserir uma linha para a impressão de uma mensagem na tela e outra linha que mantém a janela para a visualização do usuário até que uma tecla seja pressionada:
 
 ``` C#
 using System;
