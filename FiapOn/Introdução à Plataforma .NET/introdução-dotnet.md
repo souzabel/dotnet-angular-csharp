@@ -91,7 +91,7 @@ Na tela de criação, devemos escolher a linguagem Visual C# na parte direita da
 Com o projeto aberto, e por meio do Solution Explorer posicionado no lado esquerdo da janela do Visual Studio, podemos navegar para o sistema de arquivos e verificar os arquivos do projeto. Com um clique do botão direto em cima do projeto ou da solução, selecione a opção <b>Open Folder in File Explorer</b>.
 
 ### Escrevendo o código:
-Anteriormente, foram executados os passos para a criação de um projeto C# do tipo Console Application, que por padrão gera a classe <b>Program.cs</b>, a qual será responsável pela <b>execução dos nossos comandos<b>. 
+Anteriormente, foram executados os passos para a criação de um projeto C# do tipo Console Application, que por padrão gera a classe <b>Program.cs</b>, a qual será responsável pela <b>execução dos nossos comandos</b>. 
 
 ``` C#
 using System;
