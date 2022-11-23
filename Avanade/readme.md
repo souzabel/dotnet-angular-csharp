@@ -15,4 +15,7 @@ Link: https://learn.microsoft.com/pt-br/sql/ssms/download-sql-server-management-
 
 5. Baixar o Visual Studio Community
 Link: https://visualstudio.microsoft.com/pt-br/free-developer-offers/
+<<<<<<< HEAD
 
+=======
+>>>>>>> 35e85211711bfbe93824bb3a1f433fedcc4f80fa
