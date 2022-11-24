@@ -209,3 +209,6 @@ Assim como as demais ides,o Visual Studio fornece diversas teclas de atalho para
  - `prop + tab + tab` Cria um atributo para a classe.
  - `propfull + tab + tab ` Cria um atributo para a classe e adiciona a implementação do get e set.
  - `propg + tab + tab ` Cria um atributosomente leitura, em queo set é declarado como privado.
+
+
+
