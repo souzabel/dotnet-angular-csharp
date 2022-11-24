@@ -170,20 +170,26 @@ class Program
 }
 ```
 Basta executar o programa e verificar a nova mensagem na tela;
-<img src="./img/tela-verificacao.png" alt="tela-verificacao">
+<img src="./img/tela-verificacao.jpg" alt="compilador">
 
-### Debug
-Até esteponto, conseguimos executar uma aplicação usando o Visual Studio e a  linguagem  C#.  Agora  temos  a  necessidade  de  validar  alguns pontos  do código  e navegar  pelas  classes  do  projeto  durante  a  execuçãoa  fim  de  entender  o  que acontece  com  nossas  classes,  atributos  e  comandos.  Para  isso,  vamos  usar  as ferramentas do Visual Studio para depuração.Vamos iniciar pela classe do modelo <br>(Models\HelloModel.cs)</br>. Abraa classe no editor e posicioneo cursor na linha de criação do atributo Mensagem. Com a tecla F9ou  um  clique  na  margem  esquerda  da  janela  doeditor,podemos  adicionar  um ponto  de  interrupção  (breakpoint).  A Figura Ponto  de  interrupção  (breakpoint) apresenta a linha selecionada e o ponto de interrupção criado.
-<img src="./img/breakpoint.png" alt="tela-verificacao">
-Para testar o breakpoint, execute o projeto (F5) e espere até o Visual Studio interromper a execução ao chegar na linhaselecionada. Com a execução interrompida na  linha  selecionada,algumas  ações  para  ajudar  na  compreensãodo  programa podem ser tomadas. A seguir,vamos ver detalhes das ações mais comuns de debug.
+## Debug
+Quando temos a necessidade de validar alguns pontos do código e navegar pelas classes do projeto durante a execução a fim de entender o que acontece com nossas classes, atributos e comandos, vamos usar as ferramentas do Visual Studio para depuração.
+Vamos iniciar pela classe do modelo (Models\HelloModel.cs). Vamos abrir a classe no editor e posicionar o cursor na linha de criação do atributo Message. Com a tecla <br>F9</b> ou um clique na margem esquerda da janela do editor, podemos adicionar um ponto de interrupção <b>(breakpoint)</b>.
 
+<img src="./img/breakpoint.jpg" alt="debug">
+
+Para testar o breakpoint, execute o projeto (F5) e espere até o Visual Studio interromper a execução ao chegar na linha selecionada. Com a execução interrompida na linha selecionada,algumas ações para ajudar na compreensão do programa podem ser tomadas. A seguir,vamos ver detalhes das ações mais comuns de debug.
 ## Immediate Window
-É uma ferramenta para inserir comandos, mudar valores de variáveisou testar regrasem tempo de execução.A janela Immediate Windowsé exibida no rodapédo Visual Studio no momentoda execução do aplicativo,  ou pode ser aberta no menu <br>Debug > Windows > Immediateou Crtl + Alt + I</br>.Dentro da janela, você pode inserir linhas de código C# para alterar valores ou acessar o conteúdo e verificar valores. A tecla enter executa a alteração.A Figura Janela Immediate Window,a seguir,mostraa ferramenta immediate, uma linha de comando para alteração do conteúdo de uma propriedade e o resultado da alteração.
-<img src="./img/window.png" alt="window">
+É uma ferramenta para inserir comandos, mudar valores de variáveisou testar regrasem tempo de execução.A janela Immediate Windowsé exibida no rodapédo Visual Studio no momentoda execução do aplicativo, ou pode ser aberta no menu <b>Debug > Windows > Immediate</b> ou <b>Crtl + Alt + I</b>.
+
+Dentro da janela, podeMOS inserir linhas de código C# para alterar valores ou acessar o conteúdo e verificar valores. A tecla enter executa a alteração.
+
+<img src="./img/window.jpg" alt="Immediate Window">
 
 ## Quick Watch
-É  a  forma  mais  rápida  de  acessar  conteúdos  de variáveis,  objetos  ou expressões  durante  a  execução  em  modo  debug.  A  janela Quick  Watchpode  ser acessada  clicando com o  botão  direito  sobre  a  variável  e  selecionando  a  opção <br>QuickWatch...</br> ou pela tecla <br>Shift + F9</br>.A Figura Janela Quick Watch, a seguir,apresenta a janela de inspeção, e objeto modelo do nosso exemplo,com seus valores em tempo de execução.
-<img src="./img/quick-watchpng" alt="quick-watch>
+É a forma mais rápida de acessar conteúdos de variáveis, objetos ou expressões durante a execução em modo debug. A janela Quick Watch pode ser acessada clicando com o botão direito sobre a variável e selecionando a opção QuickWatch... ou pela tecla <b>Shift + F9</b>.
+
+<img src="./img/quick-watch.jpg" alt="quickwacth">
 
 ## Navegando pelo código
 A lista abaixo apontaas formas possíveis de navegação por breakpoints, e suas teclas de atalho:
