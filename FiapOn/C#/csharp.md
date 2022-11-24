@@ -367,5 +367,10 @@ Mais uma vez,podemos notar a semelhança entre C# e Java nos comandose palavras-
 ### Classe e objeto
 A   definição   para   Classe   é   um   conjunto   de   objetos   com   as   mesmas características,  formado  de  propriedades  e  comportamentos  por  meio  dos  seus métodos. Podemos pensar em uma classe, como a forma de organizar o código eo nosso sistema.O objeto, também conhecido como instância de uma classe, é responsável por armazenar  os conteúdos desuas propriedades e executar  comportamento e ações por meio de seus métodos.Para entender melhor os conceitos de classe e objeto, vamos usar a linguagem C# e criar uma classe e algumas instâncias. Vamos  imaginar  a  necessidade  de  criação  de  uma  aplicação  para  controlar cursos.Para  cada  curso,precisamos  das  seguintes  informações:  código,  nome  do curso,  nome  do  instrutor,  carga  horária,  quantidade  mínima  e  máxima  de  alunos. Essas informações compõemo nosso modelo de curso para o nosso sistema.Uma classe na linguagem C# é criada a partir da descrição dos modificadores de acesso, acrescidada palavra class do nome da classe.
     <b>[modificador de acesso] class [NomeDaClasse] { }</b>.
-    
+
 A Figura Declaração de classe C#, a seguir,exibe a declaração da classe Curso e a forma de criar instâncias ou objetos:
+	<div align='center'>
+  <img height="200" src="https://user-images.githubusercontent.com/85114441/203831168-13a5f768-aaf0-432d-9e19-f5974b19fb86.png">
+		  <img height="200" src="https://user-images.githubusercontent.com/85114441/203831204-0fa1fb96-5ce9-44e5-b57a-a49ef2e7ce2f.png">
+</div>
+
