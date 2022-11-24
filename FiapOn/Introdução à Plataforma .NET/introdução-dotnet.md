@@ -125,6 +125,81 @@ namespace FiapHelloWorld
 }
 ```
 ### Compilando e executando
+A forma mais simples e prática para executar umaaplicação criadano Visual Studio é pressionando a tecla F5. Com o projeto FiapHelloWorld aberto,pressione a tecla F5e observe o resultado,conforme a Figura Janela de execução do aplicativo console a seguir:
+<img src="./img/compilador.png" alt="compilador">
+Para encerrar a execução do programa, na tela de exibição da mensagem “Fiap -Ola C#”,pressione a tecla Enter, ou na janela do Visual Studioaperte“Shift + F5”.
 
+### Organizando o projeto
+Para organizar nossos projetos em C#,precisamos falar de namespaces. Essa palavra é reservada no C#,responsável por declarar um escopo ou bloco que contém um  conjunto  de  classes  relacionadas.Também pode ser  usada  para  controlar  o acesso entre conjunto de classes de namespaces diferentes. Uma associação comum usada para explicar o conceito de namespace é o conceito de packagesem Java, com a  diferença de que  um packageJava  deve  seguir  o  mesmo  nome  da  estrutura  de diretório;em contrapartida,no C# o caminho ou o nome do namespace não precisa respeitar o caminho do diretório dos componentes.
+`Por  padrão,o  Visual  Studio  define  como  primeiro namespaceo  nome  do projeto.`
+<b>Veja o exemplo da Figura Namespace-padrãocriado pelo Visual Studio:</b>
+<img src="./img/padrao.png" alt="projeto">
 
+O padrão definido pela Microsoft para a criação de namespaces deve seguir o do exemplo abaixo: <b>NomeDaEmpresa.NomeDoProjeto.ModuloDoSistema</b>. E outra boa prática que vamos adotar é a criação das pastas na estrutura do nome usado para o namespace. Exemplo: <b>...\FiapHelloWorld\FiapHelloWorld\ModelsSegue</b> Segue na Figura Exemplo de um namespaceumexemplo da estrutura de pasta e namespace.
+<img src="./img/name1.png" alt="projeto">
 
+Para a criação de um namespace, basta clicarcom o botão direito no projeto C#, escolher a opção Add >  New  Folder  e  digitar o  nome  da  pasta.  Para  o  nosso exemplo, será  criadauma  pasta  com  o  nome Models.  Para  entender  o  uso  do namespace,  clique com o botão direito na pasta Models e selecione a opção Add> Class.Selecione a opção Class e defina o nome de HelloModel,como pode ser visto na Figura Adicionando nova classe ao namespacea seguir:
+<img src="./img/name2.png" alt="projeto">
+
+Analisando o código-fonte  da  classe  criada,pode-senotar  que  foi  definido  o namespaceFiapHelloWorld.Models como padrão. Pois bem, é possível definir outro nome para um namespace sem mudar o nome da pasta, porém, por questão de bom senso, vamos mantê-lossempre iguais. Dentro  de  um namespace,é  possível  criar,além  de  classes,outros  tipos  de componentes,como: interface, struct, enum, delegate.Vamos alterar nosso exemplo e fazer o uso da classe de modelo e validar a organização do projeto. Para isso, vamos definir uma propriedade de mensagem na classe de modelo, conforme o Código-fonte 7.2 abaixo:
+
+``` C#
+using System;
+namespace FiapHelloWorld.Models
+{
+    public class HelloModel
+    {
+        public String Mensagem = "Ola Model C#";
+    }
+}
+```
+Agora  vamos  alterar  a  classe <br>Program.cs</br> para  acessar  a  classe  modelo  e imprimir o texto declarado na propriedade Mensagem.
+``` C#
+using System;
+namespace FiapHelloWorld
+{
+class Program
+{
+   static void Main(string[] args)
+   {
+   Models.HelloModel model = new Models.HelloModel();
+   Console.WriteLine(model.Mensagem);
+   Console.Read();
+   }
+}
+}
+```
+Basta executar o programa e verificar a nova mensagem na tela;
+<img src="./img/tela-verificacao.png" alt="tela-verificacao">
+
+### Debug
+Até esteponto, conseguimos executar uma aplicação usando o Visual Studio e a  linguagem  C#.  Agora  temos  a  necessidade  de  validar  alguns pontos  do código  e navegar  pelas  classes  do  projeto  durante  a  execuçãoa  fim  de  entender  o  que acontece  com  nossas  classes,  atributos  e  comandos.  Para  isso,  vamos  usar  as ferramentas do Visual Studio para depuração.Vamos iniciar pela classe do modelo <br>(Models\HelloModel.cs)</br>. Abraa classe no editor e posicioneo cursor na linha de criação do atributo Mensagem. Com a tecla F9ou  um  clique  na  margem  esquerda  da  janela  doeditor,podemos  adicionar  um ponto  de  interrupção  (breakpoint).  A Figura Ponto  de  interrupção  (breakpoint) apresenta a linha selecionada e o ponto de interrupção criado.
+<img src="./img/breakpoint.png" alt="tela-verificacao">
+Para testar o breakpoint, execute o projeto (F5) e espere até o Visual Studio interromper a execução ao chegar na linhaselecionada. Com a execução interrompida na  linha  selecionada,algumas  ações  para  ajudar  na  compreensãodo  programa podem ser tomadas. A seguir,vamos ver detalhes das ações mais comuns de debug.
+
+## Immediate Window
+É uma ferramenta para inserir comandos, mudar valores de variáveisou testar regrasem tempo de execução.A janela Immediate Windowsé exibida no rodapédo Visual Studio no momentoda execução do aplicativo,  ou pode ser aberta no menu <br>Debug > Windows > Immediateou Crtl + Alt + I</br>.Dentro da janela, você pode inserir linhas de código C# para alterar valores ou acessar o conteúdo e verificar valores. A tecla enter executa a alteração.A Figura Janela Immediate Window,a seguir,mostraa ferramenta immediate, uma linha de comando para alteração do conteúdo de uma propriedade e o resultado da alteração.
+<img src="./img/window.png" alt="window">
+
+## Quick Watch
+É  a  forma  mais  rápida  de  acessar  conteúdos  de variáveis,  objetos  ou expressões  durante  a  execução  em  modo  debug.  A  janela Quick  Watchpode  ser acessada  clicando com o  botão  direito  sobre  a  variável  e  selecionando  a  opção <br>QuickWatch...</br> ou pela tecla <br>Shift + F9</br>.A Figura Janela Quick Watch, a seguir,apresenta a janela de inspeção, e objeto modelo do nosso exemplo,com seus valores em tempo de execução.
+<img src="./img/quick-watchpng" alt="quick-watch>
+
+## Navegando pelo código
+A lista abaixo apontaas formas possíveis de navegação por breakpoints, e suas teclas de atalho:
+ - Step-Into (F11), para executar a próxima linha de código, mesmo se a linha de código estiver em outro bloco de código, outra classe ou até mesmo em outra rotinaexterna.
+  - Step-over(F10),  usado  para  avançar  a  execução  dentro  da  mesma estrutura de código.
+  - Step Backward(Alt +  ́), para retroceder a execução para a linha anterior.
+  - Continue(F5), executa a aplicação até o próximo breakpoint
+  - StepOut(Shift + F11), usado para retornar aoponto de debug que originou a chamada.
+
+## Atalhos
+Assim como as demais ides,o Visual Studio fornece diversas teclas de atalho para facilitar o diaadia do desenvolvedor e aumentar a produtividade na construção de código. O Quadro “Atalhos do Visual Studio”mostraalgumas opções mais comuns para os desenvolvedores C#.
+ - `Crtl + L` Remove a linha de código em que o cursor está posicionado.
+ - `Crtl + K, Crtl + D` Formata (identa) todo o código da classe em edição
+ - `Crtl+ Shift + B` Complicação de todos os projetos da solução
+ - `Crtl + .` Abre a opção de SmartTags, para correções rápidas de código ou criação rápida de código. É usadotambém como autocomplete
+ - `ctor + tab + tab ` Cria o código do construtor da classe.
+ - `prop + tab + tab` Cria um atributo para a classe.
+ - `propfull + tab + tab ` Cria um atributo para a classe e adiciona a implementação do get e set.
+ - `propg + tab + tab ` Cria um atributosomente leitura, em queo set é declarado como privado.
