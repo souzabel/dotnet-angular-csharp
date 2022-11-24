@@ -80,7 +80,7 @@ O projeto .NET é o responsável pelo agrupamento do código-fonte, ícones, ima
 Veja abaixo a estrutura da solução e projetos no Visual Studio e no sistema de arquivos do Windows:
 <img src="./img/estruturaproj.png" alt="estrutura de projeto">
 
-## Criando um projeto
+### Criando um projeto
 Para o primeiro programa, sera necessária a criação de uma solução de projeto. Com o Visual Studio aberto, selecione o menu `File > New > Project (a tecla de atalho Crtl + Shift + N)`, para abertura da tela de criação de novos projetos.
 
 A Figura `Tela de criacdo de projeto` apresenta a tela inicial de criação de um projeto e os templates disponíveis.
